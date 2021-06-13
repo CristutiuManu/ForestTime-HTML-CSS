@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: black;
+    }
+
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+
+    .textCenter {
+      text-align: center;
+      position: relative;
+      bottom: 1.6vw;
+    }
+
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    p,
+    h1 {
+      color: white;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+    .classHover:hover {
+      -ms-transform: scale(1.5); /* IE 9 */
+      -webkit-transform: scale(1.2); /* Safari 3-8 */
+      transform: scale(1.2);
+    }
+  </style>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <h1>Gallery</h1>
+      <p>Awala</p>
+    </div>
+    <div class="textCenter">
+      <form action="index.html">
+        <input type="submit" value="Go back" />
+      </form>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+      <div class="column">
+        <img src="img/wedding.jpg" class="classHover" style="width: 100%" />
+        <img src="img/rocks.jpg" class="classHover" style="width: 100%" />
+        <img src="img/falls2.jpg" class="classHover" style="width: 100%" />
+        <img src="img/paris.jpg" class="classHover" style="width: 100%" />
+        <img src="img/trainWOman.jpg" class="classHover" style="width: 100%" />
+        <img src="img/mist.jpg" class="classHover" style="width: 100%" />
+        <img src="img/seaTumblr.jpg" class="classHover" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="img/johnWick.gif" class="classHover" style="width: 100%" />
+        <img src="img/ocean.jpg" class="classHover" style="width: 100%" />
+        <img src="img/lgbt.jpg" class="classHover" style="width: 100%" />
+        <img src="img/pantera.jpg" class="classHover" style="width: 100%" />
+        <img src="img/rainNature.jpg" class="classHover" style="width: 100%" />
+        <img src="img/underwater.jpg" class="classHover" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="img/cat.jpg" class="classHover" style="width: 100%" />
+        <img src="img/mercedes.jpg" class="classHover" style="width: 100%" />
+        <img src="img/falls2.jpg" class="classHover" style="width: 100%" />
+        <img src="img/IHaveADream.jpg" class="classHover" style="width: 100%" />
+        <img src="img/nature.jpg" class="classHover" style="width: 100%" />
+        <img src="img/elder.jpg" class="classHover" style="width: 100%" />
+        <img src="img/house.jpg" class="classHover" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="img/bmw.jpg" class="classHover" style="width: 100%" />
+        <img src="img/pantera.jpg" class="classHover" style="width: 100%" />
+        <img src="img/wedding.jpg" class="classHover" style="width: 100%" />
+        <img
+          src="img/mountainskies.jpg"
+          class="classHover"
+          style="width: 100%"
+        />
+        <img src="img/rocks.jpg" class="classHover" style="width: 100%" />
+        <img src="img/gifcar.gif" class="classHover" style="width: 100%" />
+      </div>
+    </div>
+  </body>
+</html>
